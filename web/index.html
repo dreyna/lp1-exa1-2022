@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/examen.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Datos Estudiantes</h1>
+            <hr>
+            <div class="cuerpo">
+                <div class="izquierda">
+                    <h3>Registrar Estudiante</h3>
+                    <label for="a">Nombres:</label>
+                    <input type="text" class="caja" id="nombres" placeholder="Nombres" required>
+                    <div class="radio">
+                        <div class="r">
+                            <input type="radio" name="sexo" value="Femenino">
+                            <strong>Femenino</strong>  
+                        </div>
+                        <div class="r">
+                            <input type="radio" name="sexo" value="Masculino">
+                            <strong>Masculino</strong>  
+                        </div>                    
+                    </div>
+
+                    <select name="ciclo" id="ciclo" class="caja">
+                        <option value="0">Seleccionar Ciclo</option>
+                        <option value="I">I</option>
+                        <option value="II">II</option>
+                        <option value="III">III</option>
+                        <option value="IV">IV</option>
+                        <option value="V">V</option>
+                        <option value="VI">VI</option>
+                        <option value="VII">VII</option>
+                        <option value="VIII">VIII</option>
+                        <option value="IX">IX</option>
+                        <option value="X">X</option>
+                    </select>
+                    <select name="escuela" id="escuela" class="caja">
+                        <option value="0">Seleccionar Escuela</option>
+                        <option value="Sistemas">Sistemas</option>
+                        <option value="Ambiental">Ambiental</option>
+                        <option value="Arquitectura">Arquitectura</option>
+                        <option value="Civil">Civil</option>
+                        <option value="Alimentos">Alimentos</option>
+                    </select>
+                    <button class="boton" id="agregar">Registrar</button>
+                </div>
+                <div style="width: 100%;">
+                    <table>
+                        <thead>
+                            <tr style="background-color: brown; color: white; font-size:14px ;">
+                                <th>Nombres</th>
+                                <th>Sexo</th>
+                                <th>Ciclo</th>
+                                <th>Escuela</th>
+                                <th>Accion</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbd"></tbody>
+                    </table>
+                </div>
+            </div>       
+        </div>
+
+        <script src="js/examen.js"></script>
+    </body>
+</html>
